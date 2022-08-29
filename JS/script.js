@@ -11,7 +11,7 @@ subBtn.addEventListener('click', () => {
 });
 
 function getData () {
-  fetch(`http://api.weatherapi.com/v1/current.json?key=dadde46a779548ae9bc203817222908&q=${userInput.value}&aqi=no
+  fetch(`https://api.weatherapi.com/v1/current.json?key=dadde46a779548ae9bc203817222908&q=${userInput.value}&aqi=no
   `)
   .then(response => response.json())
   .then(data => {
