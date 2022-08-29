@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";>
+  <title>Weather API</title>
+  <style>
+    body{
+  font-family: monospace;
+}
+h1{
+  font-size: 50px;
+}
+#locationSearch{
+  font-size: 30px;
+}
+h2{
+  font-size: 25px;
+}
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="box is-flex is-justify-content-center has-background-danger has-text-white-ter">
+      <h1>Weather App</h1>
+    </div>
+
+    <div class="box is-flex is-justify-content-space-around is-align-items-center">
+      
+        <input id="selectLocation" class="input column is-half" placeholder="Type a City">
+      
+
+        <button class="button is-danger" id="btn">Submit</button>
+    </div>
+
+    <div class="box is-flex is-justify-content-space-around is-align-items-center">
+      <h2 id="locationSearch">City</h2>
+      <img src="" alt="" id="icon">
+    </div>
+
+    <div id="contentDiv" class="box is-flex is-justify-content-space-around is-align-items-center">
+      <div>
+        <h2>location:</h2>
+        <p id="location"></p>
+      </div>
+      <div>
+        <h2>Current Temp:</h2>
+        <p id="temp"></p>
+      </div>
+      <div>
+        <h2>humidity:</h2>
+        <p id="humidity"></p>
+      </div>
+    </div>
+
+  </div>
+  <script src="./JS/script.js"></script>
+</body>
+</html>
