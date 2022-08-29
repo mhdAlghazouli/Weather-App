@@ -10,18 +10,15 @@ subBtn.addEventListener('click', () => {
   getData();
 });
 
-
-
 function getData () {
   fetch(`http://api.weatherapi.com/v1/current.json?key=dadde46a779548ae9bc203817222908&q=${userInput.value}&aqi=no
   `)
   .then(response => response.json())
   .then(data => {
-    console.log(data)
     locationSearch.innerHTML = `${data.location.name}`
     icon.src = `${data.current.condition.icon}`
     locationName.innerHTML = `${data.location.region}`
     temp.innerHTML = `${data.current.temp_f}`
     humidity.innerHTML = `${data.current.humidity}%`
-  })
-}
+  });
+};
